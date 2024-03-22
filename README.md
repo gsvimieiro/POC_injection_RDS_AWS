@@ -4,8 +4,8 @@ O objetivo desta POC é demonstrar de forma simples uma ingestão de dados para 
 
 Tarefas:
 
-1 - Criar usuário na AWS OK
-2 - Criar uma instância do RDS OK
-3 - Criar um Database PostgreSQL via RDS OK
-4 - Instalar o DBeaver OK
-5 - Criar uma conexão ao banco PostgreSQL via DBeaver OK
+- Criar usuário na AWS OK
+- Criar uma instância do RDS OK
+- Criar um Database PostgreSQL via RDS OK
+- Instalar o DBeaver OK
+- Criar uma conexão ao banco PostgreSQL via DBeaver OK
