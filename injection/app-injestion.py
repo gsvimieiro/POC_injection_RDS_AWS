@@ -20,7 +20,7 @@ class tb_ce_especies(Base):
     Sp = Column(String)
    
     def start():
-        db_string = "postgresql://postgres:password.@server-01.cn8gc8ea4v65.us-east-1.rds.amazonaws.com/db01"
+        db_string = "postgresql://user:password@server-01.cn8gc8ea4v65.us-east-1.rds.amazonaws.com/db01"
         engine = create_engine(db_string)
         Session = sessionmaker(bind=engine)
         session = Session()
