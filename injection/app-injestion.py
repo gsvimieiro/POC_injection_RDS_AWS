@@ -11,18 +11,16 @@ from sqlalchemy.orm import sessionmaker
 
 Base = declarative_base()
 
-class tb_venda_tesouro(Base):
-    __tablename__ = 'tb_tesouro_venda'
+class tb_ce_especies(Base):
+    __tablename__ = 'tb_ce_especies'
     id = Column(Integer, primary_key=True)
-    TipoTitulo = Column(String)
-    VencimentodoTitulo = Column(String)
-    DataVenda = Column(Text)
-    PU = Column(Float)
-    Quantidade = Column(Float)
-    Valor = Column(Float)
+    Fam = Column(String)
+    Gen = Column(String)
+    Epit = Column(String)
+    Sp = Column(String)
    
     def start():
-        db_string = "postgresql://postgres:D4t4science.@server-01.csddqd4agbf7.us-east-1.rds.amazonaws.com/db01"
+        db_string = "postgresql://postgres:password.@server-01.cn8gc8ea4v65.us-east-1.rds.amazonaws.com/db01"
         engine = create_engine(db_string)
         Session = sessionmaker(bind=engine)
         session = Session()
@@ -44,13 +42,13 @@ class tb_venda_tesouro(Base):
         return
 
 # Instancia o objeto
-get_session_db, get_engine = tb_venda_tesouro.start()
+get_session_db, get_engine = tb_ce_especies.start()
 
 # Declaration base
 Base = declarative_base()
 
-df = pd.read_csv('VendasTesouroDireto.csv', sep=';')
+df = pd.read_csv('ifn-ceespecies.csv', sep=';')
 print (df.head())
 
 # call the function to load data on database
-tb_venda_tesouro.load_data('tb_tesouro_venda',df, get_session_db, get_engine)
+tb_ce_especies.load_data('tb_ce_especies',df, get_session_db, get_engine)
