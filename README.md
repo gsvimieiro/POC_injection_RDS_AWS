@@ -20,4 +20,9 @@ Tarefas:
 
   ![image](https://github.com/gsvimieiro/POC_injection_RDS_AWS/assets/25323854/a8b0f4af-bca3-42e8-a60a-f7d2eceeb4b2)
 
-- Executar a aplicação
+- Executar a aplicação OK
+
+- Conferir via DBeaver a tabela criada
+
+  ![image](https://github.com/gsvimieiro/POC_injestion_RDS_AWS/assets/25323854/170b1fb2-8ab4-42d2-b820-48de585858ae)
+
