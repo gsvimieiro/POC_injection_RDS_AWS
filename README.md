@@ -4,6 +4,7 @@ O objetivo desta POC é demonstrar de forma simples uma ingestão de dados para 
 
 Tarefas:
 
+- Fazer download do Dataset : https://dados.gov.br/dados/conjuntos-dados/ifn-inventario-florestal-nacional OK
 - Criar usuário na AWS OK
 - Criar uma instância do RDS OK
 - Criar um Database PostgreSQL via RDS OK
