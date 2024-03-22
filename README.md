@@ -1,5 +1,7 @@
 # POC_injestion_RDS_AWS
 
+Este pequeno projeto foi baseado no mini curso de ingestão de dados ministrado pelo Rodrigo Santana no canal da @Stack_tecnologias
+
 O objetivo desta POC é demonstrar de forma simples uma ingestão de dados para o PostgreSQL via RDS na AWS
 
 Tarefas:
