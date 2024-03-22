@@ -47,8 +47,9 @@ get_session_db, get_engine = tb_ce_especies.start()
 # Declaration base
 Base = declarative_base()
 
+# le o arquivo csv e transforma em Dataframe Pandas
 df = pd.read_csv('ifn-ceespecies.csv', sep=';')
 print (df.head())
 
-# call the function to load data on database
+# Chama a função load_data que irá criar a tabela tb_ce_especies la no RDS passando o dataframe pandas
 tb_ce_especies.load_data('tb_ce_especies',df, get_session_db, get_engine)
