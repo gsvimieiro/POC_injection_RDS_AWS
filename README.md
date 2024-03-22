@@ -1,4 +1,4 @@
-# POC_injection_RDS_AWS
+# POC_injestion_RDS_AWS
 
 O objetivo desta POC é demonstrar de forma simples uma ingestão de dados para o PostgreSQL via RDS na AWS
 
